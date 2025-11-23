@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,#root{height:100%}
+body{@apply bg-slate-50 text-slate-800}
+
+.send-btn{ background: linear-gradient(45deg,#6366f1,#8b5cf6); color:white; }
+.send-btn:active{ transform: scale(.98); }
+.send-btn svg{ animation: rotate 1.4s linear infinite; }
+@keyframes rotate{ from{ transform: rotate(0)} to{ transform: rotate(360deg)} }
+.cancel-btn{ background:#ef4444; color:white }
+.neuro-bubble{ position: fixed; right: 24px; bottom: 24px; z-index: 60; }
